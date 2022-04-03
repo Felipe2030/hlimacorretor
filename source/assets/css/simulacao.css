@@ -1,0 +1,37 @@
+.body-financeiro {
+    display: flex;
+    justify-content: center;
+    padding: 80px 0px 140px 0px;
+    background: rgb(248, 249, 250);
+}
+
+.container-financeiro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn-financeiro {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+.btn-financeiro button {
+    border: 0px;
+    background: #141418;
+    color: #FFF;
+    padding: 5px 40px;
+    cursor: pointer;
+}
+
+.container-financeiro a {
+    margin: 10px;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px){
+    .body-financeiro {
+        padding: 0px 0px 0px 0px;
+    }
+}

@@ -1,0 +1,413 @@
+:root{
+    /* Font-family */
+    --font-family: Arial, Helvetica, sans-serif;
+
+    /* Font-size */
+    --font-size-1: 1em;
+    --font-size-2: 0.8em;
+
+    /* Font-weight */
+    --font-weight-1: bold;
+    --font-weight-2: 600;
+
+    /* Text color */
+    --color-1: #FFFFFF;
+    --color-2: #01AFAD;
+    --color-3: #000000;
+    --color-4: #808080;
+
+    /* Background */
+    --bg-color-1: #1A1A1A;
+    --bg-color-2: #25d366;
+    --bg-color-3: #808080;
+    --bg-color-4: #01AFAD;
+}
+
+*{ margin: 0px; padding: 0px; }
+
+a{ text-decoration: none !important; }
+
+li{ list-style-type: none !important; }
+
+.container-header{
+    width: 100%;
+    height: 68px;
+    border-bottom: 1px solid rgba(226, 228, 232, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.container-header-button button{
+    border: 1px solid rgba(226, 228, 232, 0.8);
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: #FFF;
+    font-size: var(--font-size-2);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-header-button button img{
+    width: 20px;
+    height: 20px;
+    margin: 0px 10px;
+}
+
+.container-header-button button span{
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.container-header-social a img{
+    width: 20px;
+    height: 20px;
+}
+
+.container-navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    border-bottom: 1px solid rgba(226, 228, 232, 0.8);
+    padding: 0px;
+    margin: 0px;
+}
+
+.container-navbar ul li a{
+    padding: 8px 15px;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 1em;
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--color-3);
+}
+
+.container-navbar ul .active a{
+    background-color: var(--bg-color-1);
+    color: var(--color-1);
+}
+
+.container-body-fanpage{
+    width: 100%;
+    height: 230px;
+}
+
+.container-body-fanpage img{
+    width: 100%;
+    height: 100%;
+}
+
+.container-body-filter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.container-body-filter input ,.container-body-filter select{
+    display: block;
+    border: 1px solid hsl(0,0%,80%);
+    padding: 2px 8px;
+    height: 30px;
+    font-size: 0.8em;
+    margin: 0px 10px;
+    border-radius: 2px;
+    width: 220px !important;
+    color: #3C4858;
+}
+
+.container-body-filter label{
+    margin: 0px 10px 4px 10px;
+}
+
+.button-filter{
+    width: 100%;
+    padding: 10px;
+    background: #000;
+    color: #FFF !important;
+    border: 0px;
+    border-radius: 2px;
+    margin-top: 9px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.container-body-header-cards{
+    display: flex;
+    justify-content: center;
+}
+.container-body-header-cards h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--color-4);
+}
+
+.box-cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-body-cards{
+    margin: 20px 0px 0px 0px;
+}
+
+.container-body-cards .box-cards{
+    padding: 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cards{
+    border: 1px solid rgba(226, 228, 232, 0.8);
+    width: 300px;
+    margin: 10px 5px;
+    position: relative;
+}
+
+.cards-header{
+    width: 100%;
+    height: 220px;
+    position: relative;
+}
+
+.cards-header-hover{
+    width: 100%;
+    height: 220px;
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+}
+
+.cards-header-title{
+    position: absolute;
+    background: #000;
+    width: 60%;
+    padding: 2px;
+    z-index: 1;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-radius: 4px;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    padding: 0px 10px 2px 10px;
+}
+
+.cards-header-title span{
+    color: #FFF;
+    font-size: 12px;
+}
+
+.cards-header-codigo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    color: #FFF;
+    font-size: 0.8em;
+    font-family: var(--font-family);
+    padding: 0px 10px;
+}
+
+.cards img{
+    width: 100%;
+    height: 100%;
+}
+
+.cards-body{
+    padding: 20px;
+    height: 230px;
+}
+
+.cards-body-header{
+    text-align: left;
+}
+
+.cards-body-header h3{
+    font-size: 1.3em;
+}
+
+.cards-body-valores{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cards-body-valores h3{
+    font-size: 1em;
+    color: var(--color-2);
+    padding: 8px 0px 0px 0px;
+}
+
+.cards-body-valores span{
+    background: var(--bg-color-4);
+    padding: 5px;
+    font-weight: 600;
+}
+
+.cards-body-atributos div{
+    display: flex;
+    margin: 5px 0px;
+    font-size: 0.8em;
+    align-items: center;
+}
+.cards-body-atributos div span{
+    margin: 0px 10px 0px 0px;
+}
+
+.container-body-paginations{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container-body-paginations nav ul{
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: .25rem;
+}
+
+.container-body-paginations nav ul li{
+    margin: 0px 5px;
+}
+
+.container-body-paginations nav ul li a {
+    width: 30px;
+    height: 30px;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.container-footer{
+    background: #1A1A1A;
+    padding: 30px 30px 80px;
+    height: 336px;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    box-shadow: rgb(0 0 0 / 30%) 1px 0px 20px;
+}
+
+.container_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer_descricao span {
+    display: block;
+    color: #FFF;
+    font-size: 0.8em;
+    margin: 2px 0px;
+}
+
+.footer_descricao_contato {
+    position: relative;
+    padding: 0px 50px;
+    height: 300px;
+}
+
+.footer_descricao_contato span {
+    display: block;
+    color: #FFF;
+    font-size: 0.8em;
+    margin: 2px 0px;
+}
+
+
+.footer_descricao_contato img{
+    margin-left: 10px;
+}
+
+.footer_descricao_contato button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    margin: 5px 0px;
+}
+.list-button-whatsapp {
+    background: transparent;
+    border: 0px;
+    cursor: pointer;
+    font-size: 0.8em;
+}
+
+.dev {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 20px 0px;
+}
+
+
+.button_whatsap_flutuante {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border: 0px;
+    border-radius: 30px;
+    background: #25d366;
+    cursor: pointer;
+}
+
+
+.container-whatsap {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    padding: 30px;
+}
+
+.container-whatsap img{
+    width: 60%;
+    height: 100%;
+    margin: -10px 0px 0px 0px
+}
+
+
+@media only screen and (max-width: 600px){
+    .container-body-fanpage{
+        height: 80px;
+    }
+    .container-body-filter form{
+        display: block;
+        padding: 40px;
+    }
+    .container-body-filter input ,.container-body-filter select{
+        width: 100% !important;
+        margin: 0px;
+    }
+    .container-body-filter label{
+        margin: 4px 0px;
+    }
+    .button-filter{
+        margin: 10px 0px 0px 0px;
+    }
+    .container-body-header-cards h2{
+        font-size: 20px;
+    }
+    .footer_descricao_contato {
+        position: relative;
+        padding: 0px 0px; 
+        height: 0px;
+    }
+    .dev {
+        position: static;
+        bottom: 0;
+        right: 0;
+        padding: 0px 0px;
+    }
+}

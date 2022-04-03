@@ -1,0 +1,479 @@
+/* THEME */
+.card{
+    border: 0px !important;
+}
+.card-header{
+    border: 0px !important;
+    background: #FFF !important;
+}
+.bg-n1{
+    background: #0a202b;
+}
+.bg-n2{
+    background: #1a4c37;
+}
+.bg-n3{
+    background: #0F2F3F;
+}
+
+.container-card--header{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.container-card--header span{
+    font-size: 1.2em;
+    color: #0a202b;
+    font-weight: 500;
+}
+
+.container-card--body-pagination{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container-card--body-pagination .active-pagination a{
+    background: #0F2F3F;
+    color: #FFF;
+}
+
+.container-card--body-pagination ul li a{
+    color: #0a202b;
+}
+
+.container-card--body-pagination ul li a:hover{
+    background: #0F2F3F;
+    color: #FFF;
+}
+/* ENDTHEME */
+
+/* MODALLOGIN */
+#modalLogin .modal-body{
+    border-bottom: 5px solid #0a202b;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    padding: 40px;
+}
+
+#modalLogin .modal-body .container-modal-login-header{
+    text-align: center;
+    border-bottom: 2px solid #0a202b;
+    margin-bottom: 30px;
+}
+
+#modalLogin .modal-body .container-modal-login-header h3{
+    font-size: 2.3em;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+#modalLogin .modal-body .container-modal-login-body form label{
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 0.9em;
+    margin: 2px 0px;
+}
+
+#modalLogin .modal-body .container-modal-login-body form input{
+    padding: 3px 10px;
+}
+
+#modalLogin .modal-body .container-modal-login-body form a{
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 0.9em;
+    text-decoration: none;
+    color: #0a202b;
+    float: right;
+    margin: 10px 0px 20px 0px;
+}
+
+#modalLogin .modal-body .container-modal-login-body form button{
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 0.9em;
+    color: white;
+    width: 100%;
+}
+/* ENDMODALLOGIN */
+
+/* MODALREDEFINIR */
+#modalLoginSenha .modal-body{
+    border-bottom: 5px solid #0a202b;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    padding: 40px;
+}
+
+#modalLoginSenha .modal-body .container-modal-login-header{
+    text-align: center;
+    border-bottom: 2px solid #0a202b;
+    margin-bottom: 30px;
+}
+
+#modalLoginSenha .modal-body .container-modal-login-header h3{
+    font-size: 2.3em;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+#modalLoginSenha .modal-body .container-modal-login-body form label{
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 0.9em;
+    margin: 2px 0px;
+}
+
+#modalLoginSenha .modal-body .container-modal-login-body form input{
+    padding: 3px 10px;
+}
+
+#modalLoginSenha .modal-body .container-modal-login-body form button{
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 0.9em;
+    color: white;
+    width: 100%;
+}
+/* ENDMODALREDEFINIR */
+
+/* MODALUSUARIO */
+#modalusuario .modal-body{
+    border-bottom: 5px solid #0a202b;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    padding: 40px;
+}
+
+#modalusuario .modal-body .container-modal-login-header{
+    text-align: center;
+    border-bottom: 2px solid #0a202b;
+    margin-bottom: 30px;
+}
+
+#modalusuario .modal-body .container-modal-login-header h3{
+    font-size: 2.3em;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+#modalusuario .modal-body .container-modal-login-body form label{
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 0.9em;
+    margin: 2px 0px;
+}
+
+#modalusuario .modal-body .container-modal-login-body form input{
+    padding: 3px 10px;
+}
+
+#modalusuario .modal-body .container-modal-login-body form button{
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 0.9em;
+    color: white;
+    width: 100%;
+}
+/* ENDMODALUSUARIO */
+
+/* MODALUSUARIOVISUALIZAR */
+#modalusuariovisualisar .modal-body{
+    border-bottom: 5px solid #0a202b;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    padding: 40px;
+}
+
+#modalusuariovisualisar .modal-body .container-modal-login-header{
+    text-align: center;
+    border-bottom: 2px solid #0a202b;
+    margin-bottom: 30px;
+}
+
+#modalusuariovisualisar .modal-body .container-modal-login-header h3{
+    font-size: 2.3em;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+#modalusuariovisualisar .modal-body .container-modal-login-body form label{
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 0.9em;
+    margin: 2px 0px;
+}
+
+#modalusuariovisualisar .modal-body .container-modal-login-body form input{
+    padding: 3px 10px;
+}
+
+#modalusuariovisualisar .modal-body .container-modal-login-body form button{
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 0.9em;
+    color: white;
+    width: 100%;
+}
+/* ENDMODALUSUARIOVISUALIZAR */
+
+
+/* MODALGERAL */
+#modalgeral .modal-body{
+    border-bottom: 5px solid #0a202b;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    padding: 40px;
+}
+
+#modalgeral .modal-body .container-modal-login-header{
+    text-align: center;
+    border-bottom: 2px solid #0a202b;
+    margin-bottom: 30px;
+}
+
+#modalgeral .modal-body .container-modal-login-header h3{
+    font-size: 2.3em;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+#modalgeral .modal-body .container-modal-login-body form label{
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 0.9em;
+    margin: 2px 0px;
+}
+
+#modalgeral .modal-body .container-modal-login-body form input{
+    padding: 3px 10px;
+}
+
+#modalgeral .modal-body .container-modal-login-body form button{
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 0.9em;
+    color: white;
+    width: 100%;
+}
+/* ENDMODALGERAL */
+
+
+/* MODALANUNCIO */
+#modalanuncio .modal-body{
+    border-bottom: 5px solid #0a202b;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    padding: 40px;
+}
+
+#modalanuncio .modal-body .container-modal-login-header{
+    text-align: center;
+    border-bottom: 2px solid #0a202b;
+    margin-bottom: 30px;
+}
+
+#modalanuncio .modal-body .container-modal-login-header h3{
+    font-size: 2.3em;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+#modalanuncio .modal-body .container-modal-login-body form label{
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 0.9em;
+    margin: 2px 0px;
+}
+
+#modalanuncio .modal-body .container-modal-login-body form input{
+    padding: 3px 10px;
+}
+
+#modalanuncio .modal-body .container-modal-login-body form button{
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 0.9em;
+    color: white;
+    width: 100%;
+}
+/* ENDMODALANUNCIO */
+
+
+
+
+/* MODALTIPO */
+#modaltipo .modal-body{
+    border-bottom: 5px solid #0a202b;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    padding: 40px;
+}
+
+#modaltipo .modal-body .container-modal-login-header{
+    text-align: center;
+    border-bottom: 2px solid #0a202b;
+    margin-bottom: 30px;
+}
+
+#modaltipo .modal-body .container-modal-login-header h3{
+    font-size: 2.3em;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+#modaltipo .modal-body .container-modal-login-body form label{
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 0.9em;
+    margin: 2px 0px;
+}
+
+#modaltipo .modal-body .container-modal-login-body form input{
+    padding: 3px 10px;
+}
+
+#modaltipo .modal-body .container-modal-login-body form button{
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 0.9em;
+    color: white;
+    width: 100%;
+}
+/* ENDMODALTIPO */
+
+/* MODALOBJETIVO */
+#modalobjetivo .modal-body{
+    border-bottom: 5px solid #0a202b;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    padding: 40px;
+}
+
+#modalobjetivo .modal-body .container-modal-login-header{
+    text-align: center;
+    border-bottom: 2px solid #0a202b;
+    margin-bottom: 30px;
+}
+
+#modalobjetivo .modal-body .container-modal-login-header h3{
+    font-size: 2.3em;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+#modalobjetivo .modal-body .container-modal-login-body form label{
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 0.9em;
+    margin: 2px 0px;
+}
+
+#modalobjetivo .modal-body .container-modal-login-body form input{
+    padding: 3px 10px;
+}
+
+#modalobjetivo .modal-body .container-modal-login-body form button{
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 0.9em;
+    color: white;
+    width: 100%;
+}
+/* MODALOBJETIVO */
+
+/* MODALCIDADE */
+#modalcidade .modal-body{
+    border-bottom: 5px solid #0a202b;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    padding: 40px;
+}
+
+#modalcidade .modal-body .container-modal-login-header{
+    text-align: center;
+    border-bottom: 2px solid #0a202b;
+    margin-bottom: 30px;
+}
+
+#modalcidade .modal-body .container-modal-login-header h3{
+    font-size: 2.3em;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+#modalcidade .modal-body .container-modal-login-body form label{
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 0.9em;
+    margin: 2px 0px;
+}
+
+#modalcidade .modal-body .container-modal-login-body form input{
+    padding: 3px 10px;
+}
+
+#modalcidade .modal-body .container-modal-login-body form button{
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 0.9em;
+    color: white;
+    width: 100%;
+}
+/* ENDMODALCIDADE */
+
+/* HOME */
+.container-card{
+    padding: 0px 60px 0px 60px;
+}
+.container-descricao{
+    padding: 60px 0px 0px 0px;
+}
+.container-descricao h3{
+    color:#0F2F3F;
+    font-size: 3em;
+}
+.container-descricao span{
+    color:#0a202b;
+    font-size: 1.5em;
+}
+.container-descricao .link-github{
+    padding: 10px 40px 10px 40px;
+    background: #0a202b;
+    color: white !important;
+}
+
+/* ENDHOME */
+
+@media only screen and (max-width: 600px){
+    /* HOME */
+    .container-card{
+        padding: 0px 0px 0px 8px;
+    }
+    .container-descricao{
+        padding: 20px 0px 0px 0px;
+    }
+    .container-descricao h3{
+        color:#0F2F3F;
+        font-size: 2em;
+    }
+    .container-descricao span{
+        color:#0a202b;
+        font-size: 1em;
+    }
+    .container-descricao .link-github{
+        padding: 10px 40px 10px 40px;
+        background: #0a202b;
+        color: white !important;
+        width: 100%;
+    }
+    /* ENDHOME */
+
+    /* THEME */
+    #navbarSupportedContent{
+        margin-top: 20px;
+    }
+    /* ENDTHEME */
+}
+
