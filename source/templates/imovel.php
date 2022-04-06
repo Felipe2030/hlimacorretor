@@ -302,9 +302,13 @@
         <div class="container-ver-imagens">
             <a id="slideimagem">VER MAIS FOTOS</a>
         </div>
-        <div class="container-ver-imagens" style="background: #dc3545;">
-            <a id="slidevideo">VER VIDEO</a>
-        </div>
+        
+        <?php if($anuncio->data->link): ?>
+            <div class="container-ver-imagens" style="background: #dc3545;">
+                <a id="slidevideo">VER VIDEO</a>
+            </div>
+        <?php endif; ?>
+
         <div class="container-imagem">
             <?php 
             if(!$num_imagem < 3){ ?>
