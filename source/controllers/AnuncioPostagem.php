@@ -20,6 +20,7 @@ class AnuncioPostagem {
         $area       = (isset($data["area"]))        ? $data["area"]         : false;
         $observacao = (isset($data["observacao"]))  ? $data["observacao"]   : false;
         $id_usuario = (isset($data["id_usuario"]))  ? $data["id_usuario"]   : false;
+        $link       = (isset($data["link"]))        ? $data["link"]         : false;
         $ativo = "N";
 
         if($cidade == "" || $tipo == "" || $objetivo == "" || $titulo == "" || $preco == "" || $descricao == "" || $quartos == "" || $garagem == "" || $area == ""):
@@ -41,6 +42,7 @@ class AnuncioPostagem {
         $anuncio->ativo = $ativo;
         $anuncio->observacao = $observacao;
         $anuncio->id_usuario = $id_usuario;
+        $anuncio->link = $link;
         $anuncio->save();
         $data = ["mensagem" => "Cadastrado com sucesso!","status" => true];
         echo json_encode($data);
@@ -60,6 +62,7 @@ class AnuncioPostagem {
         $area       = (isset($data["area"]))        ? $data["area"]         : false;
         $observacao = (isset($data["observacao"]))  ? $data["observacao"]   : false;
         $id_usuario = (isset($data["id_usuario"]))  ? $data["id_usuario"]   : false;
+        $link       = (isset($data["link"]))        ? $data["link"]         : false;
         $ativo = "S";
        
         if($cidade == "" || $tipo == "" || $objetivo == "" || $titulo == "" || $preco == "" || $descricao == "" || $quartos == "" || $garagem == "" || $area == ""):
@@ -68,38 +71,21 @@ class AnuncioPostagem {
             exit();
         endif;
 
-        $conn = conn();
-        $data = [
-            'id_objeto' => $objetivo,
-            'id_tipo_imovel' => $tipo,
-            'id_cidade' => $cidade,
-            'titulo' => $titulo,
-            'preco' => $preco,
-            'descricao' => $descricao,
-            'quartos' => $quartos,
-            'garagem' => $garagem,
-            'area' => $area,
-            'ativo' => $ativo,
-            'observacao' => $observacao,
-            'id_usuario' => $id_usuario,
-            'id' => $id,
-        ];
-        $sql = "UPDATE anuncio 
-                SET id_objeto=:id_objeto,
-                    id_tipo_imovel=:id_tipo_imovel,
-                    id_cidade=:id_cidade,
-                    titulo=:titulo,
-                    preco=:preco,
-                    descricao=:descricao,
-                    quartos=:quartos,
-                    garagem=:garagem,
-                    area=:area,
-                    ativo=:ativo,
-                    observacao=:observacao,
-                    id_usuario=:id_usuario
-                WHERE id=:id";
-        $stmt= $conn->prepare($sql);
-        $stmt->execute($data);
+        $anuncio = (new \Source\models\Anuncio())->find("id = :id", "id=$id")->fetch();
+        $anuncio->id_objeto = $objetivo;
+        $anuncio->id_tipo_imovel = $tipo;
+        $anuncio->id_cidade = $cidade;
+        $anuncio->titulo = $titulo;
+        $anuncio->preco = $preco;
+        $anuncio->descricao = $descricao;
+        $anuncio->quartos = $quartos;
+        $anuncio->garagem = $garagem;
+        $anuncio->area = $area;
+        $anuncio->ativo = $ativo;
+        $anuncio->observacao = $observacao;
+        $anuncio->id_usuario = $id_usuario;
+        $anuncio->link = $link;
+        $anuncio->save();
 
         $data = ["mensagem" => "Editado com sucesso!","status" => true];
         echo json_encode($data);

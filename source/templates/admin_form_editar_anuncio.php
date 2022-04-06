@@ -132,6 +132,10 @@ else:
                 <label>Observação</label>
                 <textarea class="form-control" name="observacao"><?=$anuncio[0]->data->observacao?></textarea>
             </div>
+            <div class="form-group col-md-6 mt-2">
+                <label>Link (Youtube) Ex: N4Nys-qFzAI</label>
+                <input class="form-control" name="link" type="text" value="<?=$anuncio[0]->data->link?>">
+            </div>
             <div class="form-group mt-4">
                 <button type="submit" class="btn text-white" style="background: #0a202b;">Editar</button>
             </div>

@@ -281,6 +281,19 @@
 </div>
 
 
+<!-- Modal --> 
+<div class="modal fade" id="modalslidevideo" tabindex="-1" role="dialog"  aria-hidden="true" style="padding:0px;">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="w3-content">
+                <iframe width="907" height="510" src="https://www.youtube.com/embed/<?=$anuncio->data->link?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 <div class="align-items-center">
     <div class="col-md-12">
      
@@ -288,6 +301,9 @@
         
         <div class="container-ver-imagens">
             <a id="slideimagem">VER MAIS FOTOS</a>
+        </div>
+        <div class="container-ver-imagens" style="background: #dc3545;">
+            <a id="slidevideo">VER VIDEO</a>
         </div>
         <div class="container-imagem">
             <?php 
@@ -382,6 +398,12 @@
         slide.addEventListener('click',function (e){
             e.preventDefault();
             $("#modalslideimagens").modal('show');
+        })
+
+        var slidevideo = document.querySelector("#slidevideo");
+        slidevideo.addEventListener('click',function (e){
+            e.preventDefault();
+            $("#modalslidevideo").modal('show');
         })
 
         var slideIndex = 1;
