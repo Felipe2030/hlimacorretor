@@ -4,12 +4,12 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitde048cb9708cfe42df13d85b0bfa7762
+class ComposerStaticInit59a08eb5ed20f3927b14ed3be01f5709
 {
     public static $files = array (
-        'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
+        'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         'e471bf351add62873bc0289ccd6a937f' => __DIR__ . '/..' . '/league/plates/src/Template/match.php',
         '152c98af9456eeb8f53697d6a7dfd689' => __DIR__ . '/..' . '/league/plates/src/Extension/Data/data.php',
         'e20239a76b73b9912f51f0005956d1db' => __DIR__ . '/..' . '/league/plates/src/Extension/Path/path.php',
@@ -113,6 +113,7 @@ class ComposerStaticInitde048cb9708cfe42df13d85b0bfa7762
     public static $classMap = array (
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'PhpToken' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/PhpToken.php',
         'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
         'UnhandledMatchError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',
         'ValueError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
@@ -121,9 +122,9 @@ class ComposerStaticInitde048cb9708cfe42df13d85b0bfa7762
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitde048cb9708cfe42df13d85b0bfa7762::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitde048cb9708cfe42df13d85b0bfa7762::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitde048cb9708cfe42df13d85b0bfa7762::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit59a08eb5ed20f3927b14ed3be01f5709::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit59a08eb5ed20f3927b14ed3be01f5709::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit59a08eb5ed20f3927b14ed3be01f5709::$classMap;
 
         }, null, ClassLoader::class);
     }
